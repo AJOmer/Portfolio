@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('div.aboutclick').click(function() {
+          $('html, body').animate({
+            scrollTop: $('div.container').offset().top
+          }, 1000)
+        }),
+      })
+
+    </script>
+
+
+    //favicon links\\
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+//end of favicon links\\
+
+
+  <title>Ahmed's Portfolio</title>
+</head>
+<style type="text/css">
+      body,
+      html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: inline;
+      }
+       #parallax{
+        background-image: url("https://www.parksconservancy.org/sites/default/files/resource-gallery/A_CRFI_170316_ATB_50_2x1.jpg");
+        height: 500px;
+        margin-bottom: 50px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       #parallax1{
+        background-image: url("https://www.androidguys.com/wp-content/uploads/2016/09/ZOkxKMf.jpg");
+        height: 300px;
+        margin-bottom: 50px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       #parallax2{
+        background-image: url("https://earthtripper.com/sites/default/files/2018-03/dubai_drone_photo.jpg");
+        height: 350px;
+        margin-bottom: 50px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       #parallax3{
+        background-image: url("https://i.imgur.com/Gp7gTUW.jpg");
+        height: 350px;
+        margin-bottom: 50px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1{
+        font-family: cosmic sans ms, cosmic sans, cursive;
+        color: gold;
+        font-size: 50px;
+      }
+      .container{
+/*        background-color: pink;*/
+        padding: -100px;
+        margin-top: -10px;
+      }
+      .intro{
+        margin-top: 90px;
+        font-family: serif;
+        font-size: 88px;
+        color: rgb(197,197,198);
+        text-align: center;
+      }
+      h3{
+        font-size: 58px;
+        text-align: center;
+        color: rgb(174,172,175);
+      }
+      .full{
+        color: blue;
+      }
+      .aboutpics{
+        display: inline-block;
+      }
+      .aboutpicture{
+        border-radius: 50%;
+        width: 230px;
+        height: 230px;
+        margin-left: 160px;
+        padding: 10px;
+        vertical-align: top;
+      }
+      .container3{
+        display: inline-block;
+      }
+      .techused{
+        width: 300px;
+        height: 200px;
+        margin: 15px;
+      }
+      .githubrepo{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+      }
+      .projectpod{
+        border-bottom: 2px solid black;
+        margin: 15px;
+      }
+      .projectpods{
+        margin: 15px;
+      }
+      .contactme{
+        text-align: center;
+        display: inline-block;
+      }
+      .contacting1{
+        margin-left: 130px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+      }
+      .contacting2{
+        margin-left: 130px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+      }
+      .contacting3{
+        margin-left: 130px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+      }
+      .contacting4{
+        margin-left: 130px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+      }
+      .contacting5{
+        margin-left: 130px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+      }
+      .contactme1 {
+        position: relative;
+        display: inline-block;
+/*        border-bottom: 1px dotted black;*/
+      }
+      .contactme1 .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      .contactme1:hover .tooltiptext {
+        visibility: visible;
+      }
+      .contactme2 {
+        position: relative;
+        display: inline-block;
+/*        border-bottom: 1px dotted black;*/
+      }
+      .contactme2 .tooltiptext1 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      .contactme2:hover .tooltiptext1 {
+        visibility: visible;
+      }
+      .contactme3 {
+        position: relative;
+        display: inline-block;
+/*        border-bottom: 1px dotted black;*/
+      }
+      .contactme3 .tooltiptext2 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      .contactme3:hover .tooltiptext2 {
+        visibility: visible;
+      }
+      .contactme4 {
+        position: relative;
+        display: inline-block;
+/*        border-bottom: 1px dotted black;*/
+      }
+      .contactme4 .tooltiptext3 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      .contactme4:hover .tooltiptext3 {
+        visibility: visible;
+      }
+      .contactme5 {
+        position: relative;
+        display: inline-block;
+/*        border-bottom: 1px dotted black;*/
+      }
+      .contactme5 .tooltiptext4 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      .contactme5:hover .tooltiptext4 {
+        visibility: visible;
+      }
+</style>
+<body>
+<!-- <a class="navbar-brand" style="font-size: 28px">A.<span style="color: rgb(0,128,128); font-family: sans-serif;">Omer</span></a> -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">A<span style="color: rgb(0,128,128); font-family: sans-serif;">Omer</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <div class="aboutclick">
+        <a class="nav-link" href="#!">About <span class="sr-only">(current)</span></a>
+      </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Technologies</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+    <div id="parallax">
+      <div class="row h-500">
+        <div class="col-md-12 align-self-center">
+          <h1 class="intro">Ahmed Omer</h1>
+          <h3>Web & Software Developer</h3>
+        </div>
+      </div>            
+    </div>
+   <div class="container">
+    <h2>About Me</h2>
+    <p>Welcome! My name is Ahmed and I am a <span class="full">Full-Stack Web Developer</span>  based in the San Francisco Bay Area. I recieved my Bachelor's Degree from San Jose State University in Business Management and up until recently I ventured into Web Development! I had some friends suggest I try my hand at programming as a change of pace and a mental challenge and I instantly enjoyed it! I decided to make the transition from sales to web development and took the initiative to learn several stacks of technology.</p>
+    <p>Asides from coding, I have a deep love of sports, especially basketball! You can find me talking endlessly about the Dallas Mavericks and the modern day MJ; Luka Doncic. Additionally, I enjoy sharing travel experiences and music recomendations with others as well as getting put on to delicious new food joints throughtout the Bay(current favorite is Senor Sisig).</p>
+   </div>
+   <div class="container2">
+     <div class="aboutpics">
+       <img class="aboutpicture" src="https://images.complex.com/complex/images/c_limit,dpr_auto,q_90,w_720/fl_lossy,pg_1/isy0qmbfazbupgmsgpnr/basektball-net">
+     </div>
+     <div class="aboutpics">
+       <img class="aboutpicture" src="https://www.uship.com/blog/wp-content/uploads/2018/02/Record-Collection-Vinyl-Frontier-1.jpg">
+     </div>
+     <div class="aboutpics">
+       <img class="aboutpicture" src="https://www.tripsavvy.com/thmb/UB4mc2MIkDdj0G_5vg4ijuPyWkE=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/Kokoro-Images-c6a2327dc06748caa639aa144e194f4d.jpg">
+     </div>
+   </div>
+       <div id="parallax1">
+      <div class="row h-500">
+        <div class="col-md-12 align-self-center">
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://skywell.software/wp-content/uploads/2019/01/javascript-vs-html-vs-css-1024x683.jpg">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://colorlib.com/wp/wp-content/uploads/sites/2/JQuery_logo.jpg">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://cdn.vox-cdn.com/thumbor/_AobZZDt_RVStktVR7mUZpBkovc=/0x0:640x427/1200x800/filters:focal(0x0:640x427)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://i.pinimg.com/originals/0f/60/19/0f6019e15f1d8ae07e7e8ea16d242676.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://cdn.worldvectorlogo.com/logos/angular-3.svg">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://miro.medium.com/max/438/1*0G5zu7CnXdMT9pGbYUTQLQ.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://seeklogo.net/wp-content/uploads/2012/03/mysql-vector1.jpg">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://bgasparotto.com/wp-content/uploads/2017/12/spring-logo.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://logos-download.com/wp-content/uploads/2018/09/Apache_Tomcat_Logo.png">
+    </div>
+    <div class="container3">
+      <img class="techused" src="https://www.import.io/wp-content/uploads/2017/10/React-logo-1.png">
+    </div>
+    <div id="parallax2">
+      <div class="row h-500">
+        <div class="col-md-12 align-self-center">
+        </div>
+      </div>            
+    </div>
+<div class="container4">
+  <h3>Projects</h3>
+  <div class="container5">
+    <div class="projectpod">
+    <h4>Private Wall</h4>
+    <p>The Private Wall application is a user friendly web application that funtions as a private messaging platform between registered users and their friends network. It closely mirrors a traditional social media timeline such as 'Twitter'. This application was built using Python, Flask, and MySQL as the database.</p>
+    <a href="https://github.com/AJOmer/Python/tree/master/private_wall"> <img class="githubrepo" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+  </div>
+  <div class="projectpod">
+    <h4>Product Manager</h4>
+    <p>A sorting application that allows for users to create products for sale and additionally, categories that each respective product would fall under to make searching for products much simpler. This application was built using Java, MySQL, and Spring Tool Suite.</p>
+    <a href="https://github.com/AJOmer/Java/tree/master/Java_SpringTools/productsandcategories"> <img class="githubrepo" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+  </div>
+  <div class="projectpods">
+    <h4>Rate My Cake</h4>
+    <p>Rate My Cake is a lightweight Angular application for managing ratings for user-submitted cakes. Additionally, cakes can be rated through a 1-5 star scale, comments, or both. The average star rating of each cake is highlighted above the cakes and is ordered in descending order. This application was built using the MEAN stack(MongoDB, Express, Angular, Nodejs).</p>
+    <a href="https://github.com/AJOmer/MEAN/tree/master/Angular/RateMyCakes"> <img class="githubrepo" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+  </div>
+  </div>
+</div>
+    <div id="parallax3">
+      <div class="row h-500">
+        <div class="col-md-12 align-self-center">
+        </div>
+      </div>            
+    </div>
+    <div class="container6">
+      <h3>Contact Me</h3>
+      <div class="container7">
+        <div class="contactme1">
+          <span class="tooltiptext">Github</span>
+          <a href="https://github.com/AJOmer"><img class="contacting1" alt="github" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+        </div>
+        <div class="contactme2">
+          <span class="tooltiptext1">Linkedin</span>
+          <a href="https://www.linkedin.com/in/ahmedjomer/"><img class="contacting2" src="https://image.flaticon.com/icons/png/512/61/61109.png"></a>
+        </div>
+        <div class="contactme3">
+          <span class="tooltiptext2">Mail</span>
+          <a href="mailto: ahmedjomer@gmail.com"><img class="contacting3" src="https://image.flaticon.com/icons/png/512/60/60543.png"></a>
+        </div>
+        <div class="contactme4">
+          <span class="tooltiptext3">Resume</span>
+          <a href="https://www.dropbox.com/h?preview=Ahmed+WebDev+Resume+2020.docx"><img class="contacting4" src="https://image.flaticon.com/icons/png/512/37/37246.png"></a>
+        </div>
+        <div class="contactme5">
+          <span class="tooltiptext4">LeetCode</span>
+          <a href="https://leetcode.com/aj_omer/"><img class="contacting5" src="https://assets.leetcode.com/static_assets/public/images/LeetCode_logo.png"></a>
+        </div>        
+      </div>
+    </div>
+</body>
+</html>
